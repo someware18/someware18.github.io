@@ -1,50 +1,96 @@
+/* Global styles */
 body {
-  background-color: #121212;
+  background: radial-gradient(ellipse at top, #121212, #0a0a0a);
   color: #ffffff;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
+
+/* Judul halaman */
 .judul-halaman {
   text-align: center;
   color: #FF5C5C;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(255, 92, 92, 0.3);
 }
+
+/* Grid konten */
 .novel-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1000px;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
   margin: 0 auto;
+  animation: fadeIn 1.2s ease;
 }
+
+/* Kartu novel */
 .novel-card {
-  width: 150px;
+  width: 180px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 15px;
   text-align: center;
-  background-color: #1e1e1e;
-  padding: 10px;
-  border-radius: 10px;
-  list-style: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
+
+.novel-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 92, 92, 0.3);
+}
+
+/* Gambar cover */
 .novel-card img {
   width: 100%;
-  border-radius: 8px;
+  height: 240px;
   object-fit: cover;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+
+/* Judul novel */
 .novel-card-title {
   font-weight: bold;
-  margin-top: 8px;
-  font-size: 0.95em;
+  font-size: 1rem;
+  margin-top: 10px;
   color: #FF5C5C;
 }
+
+/* Deskripsi singkat */
 .novel-card-desc {
-  font-size: 0.8em;
-  color: #ccc;
-  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #cccccc;
+  margin-top: 6px;
+  line-height: 1.4;
 }
+
+/* Link */
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Animasi fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
