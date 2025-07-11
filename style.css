@@ -1,107 +1,84 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OseaNovel</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">OseaNovel</div>
+    <ul class="menu">
+      <li><a href="#">Novels</a></li>
+      <li><a href="#">Library</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Join Our Discord</a></li>
+    </ul>
+    <div class="nav-right">
+      <input type="text" placeholder="Search..." class="search-box"/>
+      <button class="login-btn">Login</button>
+    </div>
+  </nav>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0b0b0b;
-  color: #ffffff;
-}
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1 class="hero-title">The Repressed Mercenary’s Machinations</h1>
+    </div>
+  </header>
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #111;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+  <!-- Highlight Section -->
+  <section class="highlight">
+    <img src="images/highlight-novel.jpg" alt="Highlight Novel">
+    <div class="highlight-text">
+      <h2>Arthandia Rising</h2>
+      <p>Di dunia sihir dan intrik, satu darah campuran menjadi harapan terakhir umat manusia.</p>
+      <a href="#" class="highlight-btn">Baca Sekarang</a>
+    </div>
+  </section>
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
+  <!-- HOT Label -->
+  <div class="hot-label">
+    <h2>🔥 HOT</h2>
+  </div>
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
+  <!-- Novel Grid -->
+  <main>
+    <section class="novel-grid">
+      <article class="novel-card">
+        <img src="images/lady-ruler.jpg" alt="Lady Ruler">
+        <div class="novel-card-title">Lady Ruler</div>
+        <div class="novel-card-desc">Kisah genius perempuan dalam dunia sihir yang dikuasai patriarki.</div>
+      </article>
+      <article class="novel-card">
+        <img src="images/bad-born-blood.jpg" alt="Bad Born Blood">
+        <div class="novel-card-title">Bad Born Blood</div>
+        <div class="novel-card-desc">Darah terkutuk, dunia kelam, dan kebenaran yang mematikan.</div>
+      </article>
+      <article class="novel-card">
+        <img src="images/novel-3.jpg" alt="Chrono Hunter">
+        <div class="novel-card-title">Chrono Hunter</div>
+        <div class="novel-card-desc">Petualangan pemburu waktu melawan kehancuran dimensi.</div>
+      </article>
+      <article class="novel-card">
+        <img src="images/novel-4.jpg" alt="Queen of Shadows">
+        <div class="novel-card-title">Queen of Shadows</div>
+        <div class="novel-card-desc">Sang ratu bayangan berjuang di tengah konspirasi dan sihir hitam.</div>
+      </article>
+      <article class="novel-card">
+        <img src="images/novel-5.jpg" alt="Arcane Legacy">
+        <div class="novel-card-title">Arcane Legacy</div>
+        <div class="novel-card-desc">Warisan sihir kuno yang bisa menghancurkan dunia modern.</div>
+      </article>
+    </section>
+  </main>
 
-.menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 OseaNovel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
-.menu li a:hover {
-  color: #f04a4a;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.search-box {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  border: none;
-  background-color: #222;
-  color: #fff;
-}
-
-.login-btn {
-  background-color: #f04a4a;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.login-btn:hover {
-  background-color: #d93d3d;
-}
-
-/* Hero Section */
-.hero {
-  background-image: url('images/banner-placeholder.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  position: relative;
-}
-
-.hero-overlay {
-  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-title {
-  color: #fff;
-  font-size: 2.5rem;
-  text-shadow: 0 0 10px #000;
-  max-width: 80%;
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  background-color: #111;
-  text-align: center;
-  padding: 1rem;
-  color: #777;
-  font-size: 0.9rem;
-}
