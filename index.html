@@ -9,7 +9,7 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar">
-  <div class="navbar-top">
+  <div class="navbar-container">
     <div class="logo">OseaNovel</div>
 
     <!-- Mobile controls -->
@@ -19,15 +19,21 @@
       <div class="hamburger" onclick="toggleMenu()">☰</div>
     </div>
 
-    <!-- Desktop controls -->
+    <!-- Desktop only -->
     <div class="nav-right">
-      <input type="text" placeholder="Search..." class="search-box"/>
+      <ul class="menu">
+        <li><a href="#">Novels</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Join Our Discord</a></li>
+      </ul>
+      <input type="text" placeholder="Search..." class="search-box" />
       <button class="login-btn">Login</button>
     </div>
   </div>
 
-  <!-- Navigation menu -->
-  <ul class="menu">
+  <!-- Mobile menu dropdown -->
+  <ul class="menu mobile-menu">
     <li><a href="#">Novels</a></li>
     <li><a href="#">Library</a></li>
     <li><a href="#">Store</a></li>
