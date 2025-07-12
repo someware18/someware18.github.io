@@ -284,4 +284,47 @@ footer {
     display: flex;
   }
 }
+/* Hamburger toggle default (desktop hidden) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
 
