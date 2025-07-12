@@ -442,4 +442,27 @@ footer {
     color: white;
   }
 }
+/* Desktop: tampilkan nav-right, sembunyikan nav-mobile-controls */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-mobile-controls {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+  }
+
+  .nav-mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
 
