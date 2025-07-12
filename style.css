@@ -381,4 +381,65 @@ footer {
     color: white;
   }
 }
+/* Default desktop */
+.nav-mobile-controls {
+  display: none;
+}
+
+/* Tombol ikon kecil */
+.icon-btn {
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+}
 
