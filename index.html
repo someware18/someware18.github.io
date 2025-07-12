@@ -8,22 +8,25 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
+<nav class="navbar">
+  <div class="nav-left">
     <div class="logo">OseaNovel</div>
-    <div class="hamburger" onclick="toggleMenu()">
-  ☰
-</div>
-    <ul class="menu">
-      <li><a href="#">Novels</a></li>
-      <li><a href="#">Library</a></li>
-      <li><a href="#">Store</a></li>
-      <li><a href="#">Join Our Discord</a></li>
-    </ul>
-    <div class="nav-right">
-      <input type="text" placeholder="Search..." class="search-box"/>
-      <button class="login-btn">Login</button>
-    </div>
-  </nav>
+  </div>
+
+  <div class="nav-mobile-controls">
+    <input type="text" placeholder="Search..." class="search-box"/>
+    <button class="login-btn">Login</button>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="#">Novels</a></li>
+    <li><a href="#">Library</a></li>
+    <li><a href="#">Store</a></li>
+    <li><a href="#">Join Our Discord</a></li>
+  </ul>
+</nav>
+
 
   <!-- Highlight Section -->
   <section class="highlight">
