@@ -10,67 +10,6 @@ body {
   color: #ffffff;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #111;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.menu li a:hover {
-  color: #f04a4a;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.search-box {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  border: none;
-  background-color: #222;
-  color: #fff;
-}
-
-.login-btn {
-  background-color: #f04a4a;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.login-btn:hover {
-  background-color: #d93d3d;
-}
-
 /* Hero Section */
 .hero {
   background-image: url('images/banner-placeholder.jpg');
