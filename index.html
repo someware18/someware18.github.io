@@ -9,28 +9,24 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar">
+  <div class="navbar-top">
+    <div class="logo">OseaNovel</div>
 
-  <!-- Baris atas: logo + tombol mobile -->
-  <div class="nav-row">
-    <div class="nav-left">
-      <div class="logo">OseaNovel</div>
-    </div>
-
-    <!-- Mobile only -->
+    <!-- Mobile controls -->
     <div class="nav-mobile-controls">
       <button class="icon-btn" title="Search">🔍</button>
       <button class="icon-btn" title="Login">🔑</button>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
     </div>
+
+    <!-- Desktop controls -->
+    <div class="nav-right">
+      <input type="text" placeholder="Search..." class="search-box"/>
+      <button class="login-btn">Login</button>
+    </div>
   </div>
 
-  <!-- Desktop only -->
-  <div class="nav-right">
-    <input type="text" placeholder="Search..." class="search-box"/>
-    <button class="login-btn">Login</button>
-  </div>
-
-  <!-- Menu nav -->
+  <!-- Navigation menu -->
   <ul class="menu">
     <li><a href="#">Novels</a></li>
     <li><a href="#">Library</a></li>
