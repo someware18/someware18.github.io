@@ -9,32 +9,30 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar">
-  <div class="navbar-container">
-    <div class="nav-header">
-      <div class="logo">OseaNovel</div>
+  <div class="navbar-inner">
+    <div class="logo">OseaNovel</div>
 
-      <!-- Mobile controls -->
-      <div class="nav-mobile-controls">
-        <button class="icon-btn">🔍</button>
-        <button class="icon-btn">🔑</button>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-      </div>
+    <!-- Desktop menu -->
+    <div class="nav-desktop">
+      <ul class="menu">
+        <li><a href="#">Novels</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Join Our Discord</a></li>
+      </ul>
+      <input type="text" class="search-box" placeholder="Search...">
+      <button class="login-btn">Login</button>
+    </div>
 
-      <!-- Desktop controls -->
-      <div class="nav-right">
-        <ul class="menu">
-          <li><a href="#">Novels</a></li>
-          <li><a href="#">Library</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">Join Our Discord</a></li>
-        </ul>
-        <input type="text" class="search-box" placeholder="Search...">
-        <button class="login-btn">Login</button>
-      </div>
+    <!-- Mobile controls -->
+    <div class="nav-mobile-controls">
+      <button class="icon-btn">🔍</button>
+      <button class="icon-btn">🔑</button>
+      <button class="hamburger" onclick="toggleMobileMenu()">☰</button>
     </div>
   </div>
 
-  <!-- Mobile menu (dropdown) -->
+  <!-- Mobile dropdown -->
   <ul class="mobile-menu">
     <li><a href="#">Novels</a></li>
     <li><a href="#">Library</a></li>
@@ -42,6 +40,7 @@
     <li><a href="#">Join Our Discord</a></li>
   </ul>
 </nav>
+
   <!-- Highlight Section -->
   <section class="highlight">
     <img src="images/highlight-novel.jpg" alt="Highlight Novel">
