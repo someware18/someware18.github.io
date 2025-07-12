@@ -205,4 +205,59 @@ footer {
   color: #777;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .highlight {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .highlight-text {
+    position: static;
+    transform: none;
+    padding: 1rem;
+  }
+
+  .highlight-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .highlight-text p {
+    font-size: 0.9rem;
+  }
+
+  .novel-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .novel-card {
+    width: 90%;
+    max-width: 300px;
+  }
+}
 
