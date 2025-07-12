@@ -204,42 +204,48 @@ footer {
   font-size: 0.9rem;
   color: #777;
 }
-/* === NAVBAR STYLING CLEAN === */
+/* === NAVBAR CORE === */
 .navbar {
   background-color: #111;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 1rem 2rem;
+  width: 100%;
   border-bottom: 1px solid #222;
 }
 
 .navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
 }
 
+/* === LOGO === */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
 }
 
-/* Right side for desktop */
+/* === DESKTOP RIGHT SIDE === */
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .menu {
   display: flex;
-  list-style: none;
   gap: 1.5rem;
-  margin-right: 1rem;
+  list-style: none;
 }
 
 .menu li a {
@@ -273,7 +279,7 @@ footer {
   background-color: #d43a3a;
 }
 
-/* MOBILE CONTROLS */
+/* === MOBILE CONTROLS === */
 .nav-mobile-controls {
   display: none;
   gap: 0.5rem;
@@ -290,12 +296,20 @@ footer {
   cursor: pointer;
 }
 
+/* === MOBILE MENU DROPDOWN === */
 .mobile-menu {
   display: none;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 2rem;
   background-color: #111;
+  list-style: none;
+}
+
+.mobile-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .mobile-menu.active {
@@ -304,20 +318,11 @@ footer {
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .nav-right {
     display: none;
   }
 
   .nav-mobile-controls {
     display: flex;
-  }
-
-  .menu {
-    display: none;
   }
 }
