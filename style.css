@@ -466,3 +466,8 @@ footer {
 .carousel-dot.active {
   background-color: #f04a4a;
 }
+.carousel-dots {
+  background-color: rgba(0,0,0,0.3); /* opsional */
+  padding: 10px 0; /* opsional untuk spasi */
+  border-radius: 20px;
+}
