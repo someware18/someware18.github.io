@@ -180,11 +180,12 @@ body {
 
 .highlight-text {
   position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
   color: #fff;
   max-width: 600px;
+  text-align: left;
 }
 
 .highlight-text h2 {
