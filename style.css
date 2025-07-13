@@ -438,7 +438,3 @@ footer {
 .mobile-menu {
   transition: all 0.3s ease-in-out;
 }
-
-/* Tambahan untuk tombol carousel (aksesibilitas via HTML) – bukan CSS, tapi pendamping */
-<button class="carousel-prev" aria-label="Sebelumnya">&#10094;</button>
-<button class="carousel-next" aria-label="Berikutnya">&#10095;</button>
