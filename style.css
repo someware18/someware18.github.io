@@ -444,3 +444,25 @@ footer {
     display: none;
   }
 }
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 4;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: #f04a4a;
+}
