@@ -498,3 +498,8 @@ footer {
     padding: 0 12px;
   }
 }
+@media screen and (max-width: 768px) {
+  .carousel-slide img {
+    object-position: 80% center; /* Fokus ke kanan gambar */
+  }
+}
