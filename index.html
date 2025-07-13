@@ -203,6 +203,10 @@
   // Auto Slide
   setInterval(nextSlide, 5000);
 
+  // ❗Tambahkan listener untuk tombol
+  document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
+  document.querySelector('.carousel-next').addEventListener('click', nextSlide);
+
   // Swipe Support
   const carousel = document.querySelector('.highlight-carousel');
   if (carousel) {
