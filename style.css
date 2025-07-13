@@ -396,3 +396,36 @@ footer {
 .carousel-next {
   right: 10px;
 }
+@media screen and (max-width: 768px) {
+  .highlight-carousel {
+    height: 240px;
+  }
+
+  .carousel-prev,
+  .carousel-next {
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+    z-index: 5;
+  }
+
+  .highlight-text {
+    top: 55%;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+  }
+
+  .highlight-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .highlight-text p {
+    font-size: 0.8rem;
+  }
+
+  .highlight-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

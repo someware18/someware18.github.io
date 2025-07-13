@@ -131,13 +131,13 @@
   <footer>
     <p>&copy; 2025 OseaNovel. All rights reserved.</p>
   </footer>
-<script>
+ <script>
   function toggleMobileMenu() {
     document.querySelector('.mobile-menu').classList.toggle('active');
   }
-</script>
-<!-- Mobile Bottom Navbar -->
-<nav class="bottom-nav">
+ </script>
+ <!-- Mobile Bottom Navbar -->
+ <nav class="bottom-nav">
   <a href="#" class="bottom-nav-item">
     <span class="nav-icon">🏠</span>
     <span class="nav-label">Home</span>
@@ -156,13 +156,13 @@
   </a>
  </nav>
  <script>
+ <script>
+ document.addEventListener("DOMContentLoaded", function () {
   let slides = document.querySelectorAll('.carousel-slide');
   let currentIndex = 0;
 
   function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-    });
+    slides.forEach((slide) => slide.classList.remove('active'));
     slides[index].classList.add('active');
   }
 
@@ -180,8 +180,13 @@
   setInterval(nextSlide, 5000);
 
   // Manual controls
-  document.querySelector('.carousel-next').addEventListener('click', nextSlide);
-  document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
+  const nextBtn = document.querySelector('.carousel-next');
+  const prevBtn = document.querySelector('.carousel-prev');
+  if (nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+  }
+ });
  </script>
 </body>
 </html>
