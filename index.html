@@ -187,6 +187,57 @@
   }
  });
  </script>
+ <script>
+ document.addEventListener("DOMContentLoaded", function () {
+  let slides = document.querySelectorAll('.carousel-slide');
+  let currentIndex = 0;
+  let startX = 0;
+  let endX = 0;
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  // Auto Slide
+  setInterval(nextSlide, 5000);
+
+  // Manual Button Controls
+  const nextBtn = document.querySelector('.carousel-next');
+  const prevBtn = document.querySelector('.carousel-prev');
+  if (nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+  }
+
+  // Touch swipe support
+  const carousel = document.querySelector('.highlight-carousel');
+  if (carousel) {
+    carousel.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      if (startX - endX > 50) {
+        nextSlide(); // swipe left
+      } else if (endX - startX > 50) {
+        prevSlide(); // swipe right
+      }
+    });
+  }
+ });
+ </script>
 </body>
 </html>
 
